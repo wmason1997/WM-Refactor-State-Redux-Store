@@ -7,5 +7,6 @@ export default function StoreProvider(props) {
   return <Provider store={store} {...props} />;
 }
 
+export {StoreProvider};
 
 
