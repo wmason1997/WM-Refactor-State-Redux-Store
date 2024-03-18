@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import { Provider } from 'react-redux';
+import store from './utils/store';
 import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 
@@ -26,10 +28,10 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <StoreProvider>
+      <Provider store={store}>
         <Nav />
         <Outlet />
-      </StoreProvider>
+      </Provider>
     </ApolloProvider>
   );
 }
