@@ -1,31 +1,30 @@
 # WM-Refactor-State-Redux-Store
-    "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
-# Deployed Site
+
 
 ## Table of Contents
 * [Description](#description)
 * [Deployed Application](#deployed-application)
 * [Screenshots](#screenshots)
 * [Credits](#credits)
-* [Contributing](#contribution-guidelines)
 * [Questions](#questions)
 
 ## Description <a name="description"></a> 
+As a junior developer, I am sure I will have to frequently immerse myself in a new technology or framework with only the documentation (or lack thereof to help me). This application was an exercise in that skill as I am sure it will prove valuable in my career.
+
+This application is a refactored e-commerce platform from [Activity 26](../01-Activities/26-Stu_Actions-Reducers/Unsolved) of the [UCSD-VIRT-FSF-PT-09-2023-U-LOLC GitLab repository](https://git.bootcampcontent.com/University-of-California---San-Diego/UCSD-VIRT-FSF-PT-09-2023-U-LOLC).
+
+The application previously managed global state through the Context API and the end goal was to refactor it to use [Redux](https://redux.js.org/) to maintain the same functionality. The result of that effort can be found below.
 
 
 ## Deployed Application <a name="deployed-application"></a>
-Deployed application is here: []().
+The deployed application is here: [https://wm-refactor-state-redux-store.onrender.com/](https://wm-refactor-state-redux-store.onrender.com/).
 
-
-
-and open in browser at the specified port. In this case, it is 3000.
 
 ## Screenshots <a name="screenshots"></a>
-
+![Screenshot](./assets//WM-Redux-Refactor-Screenshot-1.png)
+![Screenshot](./assets//WM-Redux-Refactor-Screenshot-2.png)
+![Screenshot](./assets//WM-Redux-Refactor-Screenshot-3.png)
+![Screenshot](./assets//WM-Redux-Refactor-Screenshot-4.png)
 
 
 ## Credits <a name = "credits"></a>
@@ -33,9 +32,7 @@ I had a tutoring session with Jacob Carver on 03/16/2024. Jacob helped me to und
 
 I consulted XLA and ChatGPT to debug issues introduced in this refactoring exercise.
 
-
-## Contributing <a name="contribution-guidelines"></a>
-Be respectful and please reach out if you have any suggestions. Thank you.
+By 03/19, I had gotten the application refactored (I believe) and working locally, but I could not get it successfully deployed on Render, so I had another tutoring session with Jacob Carver and an AskBCS session with Joem Mervyll Casusi. Both were very helpful and their efforts resulted in the deployment above in this README. Thanks, Jacob and Joem!
 
 
 ## Questions <a name="questions"></a>
