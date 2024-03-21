@@ -1,5 +1,9 @@
 # WM-Refactor-State-Redux-Store
-
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
 # Deployed Site
 
 ## Table of Contents
